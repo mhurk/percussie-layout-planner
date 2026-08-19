@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Percussie Layout Planner</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<meta name="theme-color" content="#2b2a27">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Percussie">
+</head>
+<body>
+<header>
+  <h1>Percussie Layout Planner</h1>
+  <div class="toolbar">
+    <button id="align-btn" type="button">Align rows</button>
+    <button id="export-btn" type="button">Export JSON</button>
+    <button id="export-png-btn" type="button">Export PNG</button>
+    <label class="import-label">
+      Import JSON
+      <input type="file" id="import-input" accept="application/json" hidden>
+    </label>
+    <button id="clear-btn" type="button">Clear board</button>
+  </div>
+</header>
+<main>
+  <aside id="palette" aria-label="Instrument palette"></aside>
+  <section id="board-wrap">
+    <input id="layout-title" type="text" placeholder="Untitled layout" aria-label="Layout title">
+    <div id="board" aria-label="Layout board"></div>
+  </section>
+</main>
+<div id="ghost" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

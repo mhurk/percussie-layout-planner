@@ -1,0 +1,5 @@
+# Exported layouts (personal data produced by using the app) — not app source.
+*.json
+!manifest.json
+*.png
+!icons/*.png
